@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dash border hover effects</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        #logo {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            stroke-width: 10px;
+            stroke-dasharray: 20px;
+            stroke: black;
+            fill: #F7E018;
+            transition: all 1.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            stroke-dasharray: 150px;
+        }
+
+        .text {
+            font-size: 150px;
+            font-weight: bolder;
+            text-shadow: white 1px 1px , white 2px 2px, white 3px 3px, white 4px 4px, white 5px 5px, white 6px 6px;
+            fill: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg id="logo">
+            <rect class="box" x="0" y="0" />
+            <text class="text" x="90px" y="260">JS</text>
+        </svg>
+    </div>
+</body>
+</html>
